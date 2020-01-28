@@ -76,15 +76,15 @@ class Connection
         return this.connection.State == System.Data.ConnectionState.Open;
     }
 
-    public MySqlCommand Command(string query)
+    public MySqlCommand Command(params string[] query)
     {
         MySqlCommand command = this.connection.CreateCommand();
-        command.CommandText = query;
+        command.CommandText = String.Concat(query);
 
         return command;
     }
 
-    public MySqlDataReader Execute(string query)
+    public MySqlDataReader Execute(params string[] query)
     {
         MySqlCommand command = this.Command(query);
 
@@ -93,7 +93,7 @@ class Connection
         return command.ExecuteReader();
     }
 
-    public int ExecuteNonQuery(string query)
+    public int ExecuteNonQuery(params string[] query)
     {
         MySqlCommand sqlCommand = this.Command(query);
 

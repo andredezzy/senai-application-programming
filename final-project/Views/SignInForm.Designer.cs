@@ -1,6 +1,6 @@
 ﻿namespace final_project
 {
-    partial class AuthenticationForm
+    partial class SignInForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,14 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AuthenticationForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignInForm));
             this.panelTopBar = new System.Windows.Forms.Panel();
+            this.title = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.buttonClose = new Bunifu.Framework.UI.BunifuTileButton();
             this.textEmail = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.labelEmail = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.labelPassword = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.textPassword = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.buttonSignUp = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.buttonCancel = new Bunifu.Framework.UI.BunifuThinButton2();
             this.buttonSignIn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
@@ -45,6 +46,7 @@
             // panelTopBar
             // 
             this.panelTopBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
+            this.panelTopBar.Controls.Add(this.title);
             this.panelTopBar.Controls.Add(this.buttonClose);
             this.panelTopBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTopBar.Location = new System.Drawing.Point(0, 0);
@@ -52,6 +54,17 @@
             this.panelTopBar.Size = new System.Drawing.Size(471, 35);
             this.panelTopBar.TabIndex = 0;
             this.panelTopBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelTopBar_MouseMove);
+            // 
+            // title
+            // 
+            this.title.AutoSize = true;
+            this.title.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title.ForeColor = System.Drawing.Color.White;
+            this.title.Location = new System.Drawing.Point(207, 6);
+            this.title.Name = "title";
+            this.title.Size = new System.Drawing.Size(51, 20);
+            this.title.TabIndex = 2;
+            this.title.Text = "Entrar";
             // 
             // buttonClose
             // 
@@ -134,31 +147,31 @@
             this.textPassword.TabIndex = 3;
             this.textPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // buttonSignUp
+            // buttonCancel
             // 
-            this.buttonSignUp.ActiveBorderThickness = 1;
-            this.buttonSignUp.ActiveCornerRadius = 1;
-            this.buttonSignUp.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
-            this.buttonSignUp.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.buttonSignUp.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.buttonSignUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
-            this.buttonSignUp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSignUp.BackgroundImage")));
-            this.buttonSignUp.ButtonText = "Cadastrar";
-            this.buttonSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSignUp.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSignUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.buttonSignUp.IdleBorderThickness = 1;
-            this.buttonSignUp.IdleCornerRadius = 1;
-            this.buttonSignUp.IdleFillColor = System.Drawing.Color.White;
-            this.buttonSignUp.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.buttonSignUp.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.buttonSignUp.Location = new System.Drawing.Point(46, 247);
-            this.buttonSignUp.Margin = new System.Windows.Forms.Padding(5);
-            this.buttonSignUp.Name = "buttonSignUp";
-            this.buttonSignUp.Size = new System.Drawing.Size(175, 60);
-            this.buttonSignUp.TabIndex = 5;
-            this.buttonSignUp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.buttonSignUp.Click += new System.EventHandler(this.buttonSignUp_Click);
+            this.buttonCancel.ActiveBorderThickness = 1;
+            this.buttonCancel.ActiveCornerRadius = 1;
+            this.buttonCancel.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
+            this.buttonCancel.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.buttonCancel.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.buttonCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.buttonCancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonCancel.BackgroundImage")));
+            this.buttonCancel.ButtonText = "Cancelar";
+            this.buttonCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonCancel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.buttonCancel.IdleBorderThickness = 1;
+            this.buttonCancel.IdleCornerRadius = 1;
+            this.buttonCancel.IdleFillColor = System.Drawing.Color.White;
+            this.buttonCancel.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.buttonCancel.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.buttonCancel.Location = new System.Drawing.Point(46, 247);
+            this.buttonCancel.Margin = new System.Windows.Forms.Padding(5);
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Size = new System.Drawing.Size(175, 60);
+            this.buttonCancel.TabIndex = 5;
+            this.buttonCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonSignIn
             // 
@@ -205,12 +218,12 @@
             this.bunifuSeparator2.LineThickness = 1;
             this.bunifuSeparator2.Location = new System.Drawing.Point(103, 146);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
-            this.bunifuSeparator2.Size = new System.Drawing.Size(315, 35);
+            this.bunifuSeparator2.Size = new System.Drawing.Size(314, 35);
             this.bunifuSeparator2.TabIndex = 8;
             this.bunifuSeparator2.Transparency = 255;
             this.bunifuSeparator2.Vertical = false;
             // 
-            // AuthenticationForm
+            // SignInForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -218,7 +231,7 @@
             this.ClientSize = new System.Drawing.Size(471, 346);
             this.Controls.Add(this.bunifuSeparator2);
             this.Controls.Add(this.buttonSignIn);
-            this.Controls.Add(this.buttonSignUp);
+            this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.labelPassword);
             this.Controls.Add(this.textPassword);
             this.Controls.Add(this.labelEmail);
@@ -226,10 +239,11 @@
             this.Controls.Add(this.panelTopBar);
             this.Controls.Add(this.bunifuSeparator1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "AuthenticationForm";
+            this.Name = "SignInForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panelTopBar.ResumeLayout(false);
+            this.panelTopBar.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,10 +256,11 @@
         private Bunifu.Framework.UI.BunifuCustomLabel labelEmail;
         private Bunifu.Framework.UI.BunifuCustomLabel labelPassword;
         private Bunifu.Framework.UI.BunifuMaterialTextbox textPassword;
-        private Bunifu.Framework.UI.BunifuThinButton2 buttonSignUp;
+        private Bunifu.Framework.UI.BunifuThinButton2 buttonCancel;
         private Bunifu.Framework.UI.BunifuThinButton2 buttonSignIn;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
+        private Bunifu.Framework.UI.BunifuCustomLabel title;
     }
 }
 

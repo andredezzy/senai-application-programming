@@ -18,7 +18,7 @@ namespace final_project
 
             Connection = new Connection(Constants.MYSQL_SERVER, Constants.MYSQL_DATABASE, Constants.MYSQL_USER, Constants.MYSQL_PASSWORD);
 
-            Application.Run(new AuthenticationForm());
+            Application.Run(new SignInForm());
         }
     }
 }

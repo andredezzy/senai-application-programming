@@ -5,7 +5,6 @@ C:\André\Programação de Aplicativos\final-project\final-project\obj\Debug\fin
 C:\André\Programação de Aplicativos\final-project\final-project\bin\Debug\final-project.exe
 C:\André\Programação de Aplicativos\final-project\final-project\bin\Debug\final-project.pdb
 C:\André\Programação de Aplicativos\final-project\final-project\bin\Debug\Bunifu_UI_v1.52.dll
-C:\André\Programação de Aplicativos\final-project\final-project\obj\Debug\final_project.AuthenticationForm.resources
 C:\André\Programação de Aplicativos\final-project\final-project\obj\Debug\final-project.exe
 C:\André\Programação de Aplicativos\final-project\final-project\obj\Debug\final-project.pdb
 C:\André\Programação de Aplicativos\final-project\final-project\bin\Debug\BouncyCastle.Crypto.dll
@@ -16,3 +15,6 @@ C:\André\Programação de Aplicativos\final-project\final-project\bin\Debug\Ubi
 C:\André\Programação de Aplicativos\final-project\final-project\bin\Debug\Google.Protobuf.xml
 C:\André\Programação de Aplicativos\final-project\final-project\bin\Debug\MySql.Data.xml
 C:\André\Programação de Aplicativos\final-project\final-project\bin\Debug\Renci.SshNet.xml
+C:\André\Programação de Aplicativos\final-project\final-project\obj\Debug\final_project.SignUpForm.resources
+C:\André\Programação de Aplicativos\final-project\final-project\obj\Debug\final_project.SignInForm.resources
+C:\André\Programação de Aplicativos\final-project\final-project\bin\Debug\StatePrinter.dll
