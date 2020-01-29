@@ -87,6 +87,17 @@ namespace final_project
                 user.Id = id;
                 user.Access = access;
 
+                if (user.Status)
+                {
+                    Program.User = user;
+
+                    MainForm mainForm = new MainForm();
+
+                    mainForm.Show();
+
+                    this.Hide();
+                }
+
                 Console.WriteLine(user.ToString());
             }
 

@@ -8,7 +8,9 @@ namespace final_project
 {
     static class Program
     {
-        public static Connection Connection;
+        public static Connection Connection { get; set; }
+
+        public static User User { get; set; }
 
         [STAThread]
         static void Main()

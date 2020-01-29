@@ -88,7 +88,7 @@ class Connection
     {
         MySqlCommand command = this.Command(query);
 
-        Console.WriteLine($"Executing query: {query}");
+        Console.WriteLine($"Executing query: {String.Concat(query)}");
 
         return command.ExecuteReader();
     }
@@ -97,7 +97,7 @@ class Connection
     {
         MySqlCommand sqlCommand = this.Command(query);
 
-        Console.WriteLine($"Executing non-query: {query}");
+        Console.WriteLine($"Executing non-query: {String.Concat(query)}");
 
         int affectedRows = -1;
 
