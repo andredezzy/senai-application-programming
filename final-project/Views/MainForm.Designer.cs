@@ -31,14 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panelTopBar = new System.Windows.Forms.Panel();
             this.title = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.buttonClose = new Bunifu.Framework.UI.BunifuTileButton();
             this.buttonSignIn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.buttonBack = new Bunifu.Framework.UI.BunifuTileButton();
+            this.buttonClose = new Bunifu.Framework.UI.BunifuTileButton();
             this.panelTopBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTopBar
             // 
             this.panelTopBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
+            this.panelTopBar.Controls.Add(this.buttonBack);
             this.panelTopBar.Controls.Add(this.buttonClose);
             this.panelTopBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTopBar.Location = new System.Drawing.Point(0, 0);
@@ -58,27 +60,6 @@
             this.title.Size = new System.Drawing.Size(71, 20);
             this.title.TabIndex = 2;
             this.title.Text = "Principal";
-            // 
-            // buttonClose
-            // 
-            this.buttonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
-            this.buttonClose.color = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
-            this.buttonClose.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(83)))), ((int)(((byte)(80)))));
-            this.buttonClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonClose.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.buttonClose.ForeColor = System.Drawing.Color.White;
-            this.buttonClose.Image = global::final_project.Properties.Resources.close;
-            this.buttonClose.ImagePosition = 9;
-            this.buttonClose.ImageZoom = 45;
-            this.buttonClose.LabelPosition = 0;
-            this.buttonClose.LabelText = "";
-            this.buttonClose.Location = new System.Drawing.Point(436, 0);
-            this.buttonClose.Margin = new System.Windows.Forms.Padding(6);
-            this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(35, 35);
-            this.buttonClose.TabIndex = 1;
-            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // buttonSignIn
             // 
@@ -105,6 +86,48 @@
             this.buttonSignIn.TabIndex = 6;
             this.buttonSignIn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // buttonBack
+            // 
+            this.buttonBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
+            this.buttonBack.color = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
+            this.buttonBack.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(91)))), ((int)(((byte)(98)))));
+            this.buttonBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonBack.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.buttonBack.ForeColor = System.Drawing.Color.White;
+            this.buttonBack.Image = global::final_project.Properties.Resources.back;
+            this.buttonBack.ImagePosition = 8;
+            this.buttonBack.ImageZoom = 55;
+            this.buttonBack.LabelPosition = 0;
+            this.buttonBack.LabelText = "";
+            this.buttonBack.Location = new System.Drawing.Point(0, 0);
+            this.buttonBack.Margin = new System.Windows.Forms.Padding(6);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(35, 35);
+            this.buttonBack.TabIndex = 2;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
+            // buttonClose
+            // 
+            this.buttonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
+            this.buttonClose.color = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
+            this.buttonClose.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(83)))), ((int)(((byte)(80)))));
+            this.buttonClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonClose.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.buttonClose.ForeColor = System.Drawing.Color.White;
+            this.buttonClose.Image = global::final_project.Properties.Resources.close;
+            this.buttonClose.ImagePosition = 9;
+            this.buttonClose.ImageZoom = 45;
+            this.buttonClose.LabelPosition = 0;
+            this.buttonClose.LabelText = "";
+            this.buttonClose.Location = new System.Drawing.Point(436, 0);
+            this.buttonClose.Margin = new System.Windows.Forms.Padding(6);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Size = new System.Drawing.Size(35, 35);
+            this.buttonClose.TabIndex = 1;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -129,6 +152,7 @@
         private System.Windows.Forms.Panel panelTopBar;
         private Bunifu.Framework.UI.BunifuThinButton2 buttonSignIn;
         private Bunifu.Framework.UI.BunifuCustomLabel title;
+        private Bunifu.Framework.UI.BunifuTileButton buttonBack;
     }
 }
 

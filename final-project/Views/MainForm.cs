@@ -29,6 +29,15 @@ namespace final_project
             }
         }
 
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            SignInForm signInForm = new SignInForm();
+
+            signInForm.Show();
+
+            this.Hide();
+        }
+
         private void buttonClose_Click(object sender, EventArgs e)
         {
             Application.Exit();

@@ -138,7 +138,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\close.png" />
   </ItemGroup>

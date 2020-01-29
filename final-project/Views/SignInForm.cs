@@ -65,7 +65,7 @@ namespace final_project
                                                                 " INNER JOIN tb_perfil profile ON user.id_perfil = profile.id",
                                                                 $" WHERE email = '{email}' AND senha = '{passwordHash}'");
 
-            while (reader.Read())
+            if (reader.Read())
             {
                 int id = Convert.ToInt16(reader["id"]);
                 string name = Convert.ToString(reader["nome"]);
@@ -99,6 +99,10 @@ namespace final_project
                 }
 
                 Console.WriteLine(user.ToString());
+            }
+            else
+            {
+                error.Text = "Usuário ou senha incorretos";
             }
 
             Program.Connection.Disconnect();
