@@ -10,7 +10,7 @@ namespace final_project
     {
         public static Connection Connection { get; set; }
 
-        public static User User { get; set; }
+        public static User LoggedUser { get; set; }
 
         [STAThread]
         static void Main()

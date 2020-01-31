@@ -73,15 +73,15 @@ namespace final_project
                 string username = Convert.ToString(reader["usuario"]);
                 bool status = Convert.ToBoolean(reader["status"]);
 
-                string profileName = reader.GetString(5);
+                string profileName = Convert.ToString(reader["perfil"]);
 
                 Access access = new Access(profileName);
-                access.Accesses.Add("cad_usuario", Convert.ToBoolean(reader["cad_usuario"]));
-                access.Accesses.Add("cad_perfil", Convert.ToBoolean(reader["cad_perfil"]));
-                access.Accesses.Add("cad_setor", Convert.ToBoolean(reader["cad_setor"]));
-                access.Accesses.Add("cad_funcionario", Convert.ToBoolean(reader["cad_funcionario"]));
-                access.Accesses.Add("rel_setor", Convert.ToBoolean(reader["rel_setor"]));
-                access.Accesses.Add("rel_funcionario", Convert.ToBoolean(reader["rel_funcionario"]));
+                access.Add("cad_usuario", Convert.ToBoolean(reader["cad_usuario"]));
+                access.Add("cad_perfil", Convert.ToBoolean(reader["cad_perfil"]));
+                access.Add("cad_setor", Convert.ToBoolean(reader["cad_setor"]));
+                access.Add("cad_funcionario", Convert.ToBoolean(reader["cad_funcionario"]));
+                access.Add("rel_setor", Convert.ToBoolean(reader["rel_setor"]));
+                access.Add("rel_funcionario", Convert.ToBoolean(reader["rel_funcionario"]));
 
                 User user = new User(name, email, username, status);
                 user.Id = id;
@@ -89,9 +89,9 @@ namespace final_project
 
                 if (user.Status)
                 {
-                    Program.User = user;
+                    Program.LoggedUser = user;
 
-                    MainForm mainForm = new MainForm();
+                    UserForm mainForm = new UserForm();
 
                     mainForm.Show();
 
