@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
-using MySql.Data.MySqlClient;
 
 namespace final_project
 {
-    public partial class MainForm : Form
+    public partial class UserForm : Form
     {
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
@@ -15,9 +14,20 @@ namespace final_project
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
 
-        public MainForm()
+        public UserForm()
         {
             InitializeComponent();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            Console.WriteLine(Program.LoggedUser.ToString());
+
+            if (Program.LoggedUser.Access.Has("cad_usuario"))
+                buttonRegisterUser.Click -= buttonRegisterUser_Click;
+
+            labelLoggedUserName.Text = Program.LoggedUser.Name;
+            labelLoggedUserProfileName.Text = Program.LoggedUser.Access.Name;
         }
 
         private void panelTopBar_MouseMove(object sender, MouseEventArgs e)
@@ -35,12 +45,17 @@ namespace final_project
 
             signInForm.Show();
 
-            this.Hide();
+            this.Close();
         }
 
         private void buttonClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void buttonRegisterUser_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("clickeeeeddd!!!!!!!!!");
         }
     }
 }

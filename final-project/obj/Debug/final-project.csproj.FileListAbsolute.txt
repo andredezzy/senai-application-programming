@@ -18,4 +18,4 @@ C:\André\Programação de Aplicativos\final-project\final-project\bin\Debug\Ren
 C:\André\Programação de Aplicativos\final-project\final-project\obj\Debug\final_project.SignUpForm.resources
 C:\André\Programação de Aplicativos\final-project\final-project\obj\Debug\final_project.SignInForm.resources
 C:\André\Programação de Aplicativos\final-project\final-project\bin\Debug\StatePrinter.dll
-C:\André\Programação de Aplicativos\final-project\final-project\obj\Debug\final_project.MainForm.resources
+C:\André\Programação de Aplicativos\final-project\final-project\obj\Debug\final_project.UserForm.resources
