@@ -36,7 +36,7 @@
             this.labelLoggedUserName = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.labelLoggedUserProfileName = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.buttonRegisterUser = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.buttonUsers = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panelTopBar.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -66,7 +66,7 @@
             this.buttonBack.ImageZoom = 55;
             this.buttonBack.LabelPosition = 0;
             this.buttonBack.LabelText = "";
-            this.buttonBack.Location = new System.Drawing.Point(3, 0);
+            this.buttonBack.Location = new System.Drawing.Point(0, 0);
             this.buttonBack.Margin = new System.Windows.Forms.Padding(6);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(35, 35);
@@ -103,9 +103,9 @@
             this.title.ForeColor = System.Drawing.Color.White;
             this.title.Location = new System.Drawing.Point(345, 7);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(71, 20);
+            this.title.Size = new System.Drawing.Size(90, 20);
             this.title.TabIndex = 2;
-            this.title.Text = "Principal";
+            this.title.Text = "Dashboard";
             this.title.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelTopBar_MouseMove);
             // 
             // labelLoggedUserName
@@ -115,9 +115,9 @@
             this.labelLoggedUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
             this.labelLoggedUserName.Location = new System.Drawing.Point(17, 51);
             this.labelLoggedUserName.Name = "labelLoggedUserName";
-            this.labelLoggedUserName.Size = new System.Drawing.Size(184, 20);
+            this.labelLoggedUserName.Size = new System.Drawing.Size(155, 20);
             this.labelLoggedUserName.TabIndex = 8;
-            this.labelLoggedUserName.Text = "ADMINISTRADOR GERAL";
+            this.labelLoggedUserName.Text = "NOME DO USUÁRIO";
             // 
             // labelLoggedUserProfileName
             // 
@@ -126,46 +126,46 @@
             this.labelLoggedUserProfileName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
             this.labelLoggedUserProfileName.Location = new System.Drawing.Point(18, 76);
             this.labelLoggedUserProfileName.Name = "labelLoggedUserProfileName";
-            this.labelLoggedUserProfileName.Size = new System.Drawing.Size(116, 16);
+            this.labelLoggedUserProfileName.Size = new System.Drawing.Size(46, 16);
             this.labelLoggedUserProfileName.TabIndex = 10;
-            this.labelLoggedUserProfileName.Text = "ADMINISTRADOR";
+            this.labelLoggedUserProfileName.Text = "PERFIL";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.panel1.Controls.Add(this.labelLoggedUserName);
-            this.panel1.Controls.Add(this.buttonRegisterUser);
+            this.panel1.Controls.Add(this.buttonUsers);
             this.panel1.Controls.Add(this.labelLoggedUserProfileName);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(252, 530);
             this.panel1.TabIndex = 11;
             // 
-            // buttonRegisterUser
+            // buttonUsers
             // 
-            this.buttonRegisterUser.ActiveBorderThickness = 1;
-            this.buttonRegisterUser.ActiveCornerRadius = 1;
-            this.buttonRegisterUser.ActiveFillColor = System.Drawing.Color.White;
-            this.buttonRegisterUser.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.buttonRegisterUser.ActiveLineColor = System.Drawing.Color.White;
-            this.buttonRegisterUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.buttonRegisterUser.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonRegisterUser.BackgroundImage")));
-            this.buttonRegisterUser.ButtonText = "Cadastrar usuário";
-            this.buttonRegisterUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonRegisterUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRegisterUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.buttonRegisterUser.IdleBorderThickness = 1;
-            this.buttonRegisterUser.IdleCornerRadius = 1;
-            this.buttonRegisterUser.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
-            this.buttonRegisterUser.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.buttonRegisterUser.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
-            this.buttonRegisterUser.Location = new System.Drawing.Point(-7, 107);
-            this.buttonRegisterUser.Margin = new System.Windows.Forms.Padding(5);
-            this.buttonRegisterUser.Name = "buttonRegisterUser";
-            this.buttonRegisterUser.Size = new System.Drawing.Size(266, 60);
-            this.buttonRegisterUser.TabIndex = 6;
-            this.buttonRegisterUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.buttonRegisterUser.Click += new System.EventHandler(this.buttonRegisterUser_Click);
+            this.buttonUsers.ActiveBorderThickness = 1;
+            this.buttonUsers.ActiveCornerRadius = 1;
+            this.buttonUsers.ActiveFillColor = System.Drawing.Color.White;
+            this.buttonUsers.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.buttonUsers.ActiveLineColor = System.Drawing.Color.White;
+            this.buttonUsers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.buttonUsers.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonUsers.BackgroundImage")));
+            this.buttonUsers.ButtonText = "Usuários";
+            this.buttonUsers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonUsers.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUsers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.buttonUsers.IdleBorderThickness = 1;
+            this.buttonUsers.IdleCornerRadius = 1;
+            this.buttonUsers.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
+            this.buttonUsers.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.buttonUsers.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
+            this.buttonUsers.Location = new System.Drawing.Point(-7, 107);
+            this.buttonUsers.Margin = new System.Windows.Forms.Padding(5);
+            this.buttonUsers.Name = "buttonUsers";
+            this.buttonUsers.Size = new System.Drawing.Size(266, 60);
+            this.buttonUsers.TabIndex = 6;
+            this.buttonUsers.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonUsers.Click += new System.EventHandler(this.buttonUsers_Click);
             // 
             // UserForm
             // 
@@ -196,7 +196,7 @@
         private Bunifu.Framework.UI.BunifuCustomLabel labelLoggedUserName;
         private Bunifu.Framework.UI.BunifuCustomLabel labelLoggedUserProfileName;
         private System.Windows.Forms.Panel panel1;
-        private Bunifu.Framework.UI.BunifuThinButton2 buttonRegisterUser;
+        private Bunifu.Framework.UI.BunifuThinButton2 buttonUsers;
     }
 }
 

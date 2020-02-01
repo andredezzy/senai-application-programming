@@ -24,7 +24,7 @@ namespace final_project
             Console.WriteLine(Program.LoggedUser.ToString());
 
             if (Program.LoggedUser.Access.Has("cad_usuario"))
-                buttonRegisterUser.Click -= buttonRegisterUser_Click;
+                buttonUsers.Click -= buttonUsers_Click;
 
             labelLoggedUserName.Text = Program.LoggedUser.Name;
             labelLoggedUserProfileName.Text = Program.LoggedUser.Access.Name;
@@ -53,9 +53,9 @@ namespace final_project
             Application.Exit();
         }
 
-        private void buttonRegisterUser_Click(object sender, EventArgs e)
+        private void buttonUsers_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("clickeeeeddd!!!!!!!!!");
+
         }
     }
 }
